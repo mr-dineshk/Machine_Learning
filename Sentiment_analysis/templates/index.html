@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename = 'css/style.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form action="/process" method="post">
+        <h1 id = "heading">Sentimental Analysis in Machine learning</h1>
+        <p id = "paragraph">It is a Machine learning model for predict the statement is positive or negative</p>
+        <br>
+        <textarea name="inputtext" id="input-text" cols="60" rows="3" placeholder="Enter the Statement"></textarea>
+        <br>
+        <!-- <button class = "button" id = "clear" onclick="clear(event)">Clear</button> -->
+        <button class = "button" id = "predict">Predict</button>
+    </form>
+    <div class = "resultclass">
+        <h2>predicted result</h2>
+        <h2>{{ statement }}</h2>
+        <h2> answer </h2>
+        <p id = "about">Created by Dinesh kumar G </p>
+    </div>
+    <script src = "script.js"></script>
+</body>
+</html>

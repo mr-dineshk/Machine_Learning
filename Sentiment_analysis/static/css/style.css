@@ -1,0 +1,41 @@
+*{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    background-color: black;
+    color: white;   
+    text-align: center;
+    
+}
+
+#heading{
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: coral;
+    margin-top: 0px;
+    left: 0px
+}
+#paragraph{
+    padding:20px;
+    margin: 20px;
+    text-align: center;
+}
+#input-text{
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 40px;
+    background-color: white;
+    color: black;
+    
+    
+}
+.button{
+    background-color: coral;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    
+}
+#about{
+    margin-top: 14%;
+}
